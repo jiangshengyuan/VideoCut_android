@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/background"
+    tools:context=".MainActivity"
+    android:keepScreenOn="true">
+
+    <Button
+        android:id="@+id/btn_close"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="5dp"
+        android:text="返回"
+        android:textSize="22sp"
+        android:layout_alignParentStart="true"
+        android:elevation="3dp"
+        android:background="@drawable/btn_shape_circle_rectangle"/>
+
+    <TextView
+        android:id="@+id/tv_app_logo"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:elevation="1dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:text="VideoCut"
+        android:textColor="#FFFFFF"
+        android:textSize="40sp"
+        android:background="#303030"/>
+
+    <Button
+        android:id="@+id/btn_output"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:text="导出"
+        android:textSize="22sp"
+        android:layout_alignParentEnd="true"
+        android:elevation="3dp"
+        android:background="@drawable/btn_shape_circle_rectangle"/>
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="380dp"
+        android:layout_height="220dp"
+        android:layout_below="@+id/btn_close"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"/>
+
+    <VideoView
+        android:id="@+id/vdo_play"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_below="@+id/btn_close"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="60dp"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/btn_spit"
+        android:layout_height="60dp"
+        android:layout_width="80dp"
+        android:layout_below="@+id/vdo_play"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_alignParentStart="true"
+        android:text="剪切"
+        android:textSize="22sp"
+        android:textColor="@color/word_color"
+        android:background="@drawable/btn_shape_circle_rectangle"/>
+
+    <Button
+        android:id="@+id/btn_merge"
+        android:layout_height="60dp"
+        android:layout_width="80dp"
+        android:layout_below="@+id/vdo_play"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:text="合并"
+        android:textSize="22sp"
+        android:textColor="@color/word_color"
+        android:background="@drawable/btn_shape_circle_rectangle"/>
+
+    <Button
+        android:id="@+id/btn_delete"
+        android:layout_height="60dp"
+        android:layout_width="80dp"
+        android:layout_below="@+id/vdo_play"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="20dp"
+        android:layout_alignParentEnd="true"
+        android:text="删除"
+        android:textSize="22sp"
+        android:textColor="@color/word_color"
+        android:background="@drawable/btn_shape_circle_rectangle"/>
+
+    <Button
+        android:id="@+id/btn_addvideo_before"
+        android:layout_height="60dp"
+        android:layout_width="80dp"
+        android:layout_below="@+id/btn_spit"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="25dp"
+        android:text="前添加"
+        android:textSize="22sp"
+        android:textColor="@color/word_color"
+        android:background="@drawable/btn_shape_circle_rectangle"/>
+
+    <Button
+        android:id="@+id/btn_play_stop"
+        android:layout_height="60dp"
+        android:layout_width="120dp"
+        android:layout_below="@+id/btn_spit"
+        android:layout_marginTop="25dp"
+        android:layout_centerHorizontal="true"
+        android:text="播放/暂停"
+        android:textSize="22sp"
+        android:textColor="@color/word_color"
+        android:background="@drawable/btn_shape_circle_rectangle"/>
+
+    <Button
+        android:id="@+id/btn_addvideo_behind"
+        android:layout_height="60dp"
+        android:layout_width="80dp"
+        android:layout_below="@+id/btn_spit"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="20dp"
+        android:layout_alignParentEnd="true"
+        android:text="后添加"
+        android:textSize="22sp"
+        android:textColor="@color/word_color"
+        android:background="@drawable/btn_shape_circle_rectangle"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview_video_choose"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@+id/btn_addvideo_before"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/btn_shape_circle_rectangle"/>
+
+    <View
+        android:layout_height="110dp"
+        android:layout_width="2dp"
+        android:layout_below="@+id/btn_addvideo_before"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:background="@color/word_color"/>
+
+</RelativeLayout>
